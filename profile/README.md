@@ -4,6 +4,8 @@ This is a project for [Therap Javafest 2025](https://www.therapjavafest.com/) by
 
 Blend:it is a cloud-native pipeline for generating and processing `.blend` assets, integrating backend services, 3D rendering automation, and message-driven workflows. The project is designed to run on **Google Kubernetes Engine (GKE Autopilot)** with scalability and reliability in mind.
 
+[Clicl here](https://www.youtube.com/watch?v=ZNub_PMqeaw) for Full Project Demonstration
+
 ---
 
 ## 🚀 Technologies Used
