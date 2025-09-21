@@ -116,6 +116,56 @@ npm run build
 <img width="2045" height="2400" alt="image" src="https://github.com/user-attachments/assets/5287b2a8-3507-42f4-b5b6-bb668c734a62" />
 
 
+# P. S.
+
+The backend is not fully uploaded to GKE for resource limitations. Only authentication and worker handler is up and running. To test it 
+you can go to these urls and make api request for login, signup and email verification. Also worker can pull jobs from the server. But
+users currently cannot upload their files as the microservice is not yet running in Google kubernetes engine.
+
+http://34.171.206.206:80/auth/signup
+`POST`
+```json
+{
+    "userId": "anything-unique",
+    "email": "your-email",
+    "password": "HelloWorld",
+    "fullName": "You Name"
+}
+```
+
+
+http://34.171.206.206:80/auth/verify `POST`
+```json
+{
+    "email": "your-email"
+}
+```
+
+
+http://34.171.206.206:80/auth/verify/confirm `POST`
+```json
+{
+    "verificationCode": 123456,
+    "email": "your-email"
+}
+```
+
+http://34.171.206.206:80/auth/login `POST`
+```json
+{
+    "email": "your-email",
+    "password": "HelloWorld"
+}
+```
+http://34.171.206.206:80/users/me `GET`
+with Authorization Header Bearer Token \
+
+http://34.171.206.206:80/users/ `GET`
+with Authorization Header Bearer Token \
+
+http://34.171.206.206:80/public/ `GET` to see total users in our service
+
+
 > **Members:** \
 > Pritom Das \
 > Zubayer Hussain Uday
