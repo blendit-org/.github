@@ -122,7 +122,7 @@ The backend is not fully uploaded to GKE for resource limitations. Only authenti
 you can go to these urls and make api request for login, signup and email verification. Also worker can pull jobs from the server. But
 users currently cannot upload their files as the microservice is not yet running in Google kubernetes engine.
 
-We have added javafest@therapservices.net as admin in our kubenetes cluster
+# We have added javafest@therapservices.net as admin in our kubenetes cluster
 
 http://34.171.206.206:80/auth/signup
 `POST`
