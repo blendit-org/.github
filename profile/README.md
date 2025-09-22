@@ -122,7 +122,7 @@ npm run build
 
 The backend is not fully uploaded to GKE for resource limitations. Only authentication and worker handler is up and running. To test it 
 you can go to these urls and make api request for login, signup and email verification. Also worker can pull jobs from the server. But
-users currently cannot upload their files as the microservice is not yet running in Google kubernetes engine.
+users currently cannot upload their files as the microservice is not yet running in Google kubernetes engine. It runs fine on a local network
 
 # We have added javafest@therapservices.net as admin in our kubenetes cluster
 
