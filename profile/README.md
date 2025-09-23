@@ -27,7 +27,7 @@ Blend:it is a cloud-native pipeline for generating and processing `.blend` asset
 - Kubernetes **Service** & **Secret** integration for RabbitMQ access
 
 ### 🎨 3D Rendering & Asset Pipeline
-- **Blender** – `.blend` file generation and processing
+- **Blender** – `.blend` file processing
 - **Python** – for Blender scripting and asset automation
 - **Google Cloud Storage (GCS)** – storing `.blend` files and outputs
 
@@ -35,15 +35,6 @@ Blend:it is a cloud-native pipeline for generating and processing `.blend` asset
 - **kubectl** – Kubernetes CLI for deployments and troubleshooting
 - **YAML manifests** – Deployment, Service, and Autopilot resource configs
 - **Spring Data** – database integration (future scope)
-
----
-
-## 📂 Project Structure (High-Level)
-
-- `blender-pipeline-service/` → Handles `.blend` generation/upload  
-- `ai-service/` → AI-related processing (integrated with Blender pipeline)  
-- `rabbitmq/` → Messaging queue setup and configs  
-- `k8s-manifests/` → Kubernetes deployment & service YAML files  
 
 ---
 
